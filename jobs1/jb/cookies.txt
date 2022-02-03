@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+yangyuqing9527.wixsite.com	TRUE	/jobbrokeronline	FALSE	1999999999	svSession	5ee2ffe5d9816ddf41bd75aec9f3dfdb0f49bb8cf21696287231375a69784fb0e9953c1d893c7079240c3b1f095d68471e60994d53964e647acf431e4f798bcdfa076c4ea5e9c2f20718c454ecaca30042b97b7b557b5a3e23dc17138e890543
+yangyuqing9527.wixsite.com	TRUE	/	FALSE	1999999999	XSRF-TOKEN	1604051726|6UZJ01KPUZ6Y
+yangyuqing9527.wixsite.com	TRUE	/	FALSE	1999999999	SameSite	None
+yangyuqing9527.wixsite.com	TRUE	/	FALSE	1999999999	hs	-228124060
+yangyuqing9527.wixsite.com	TRUE	/	FALSE	1999999999	ssr-caching	cache#desc=miss#varnish=miss#dc#desc=ause1"
+
