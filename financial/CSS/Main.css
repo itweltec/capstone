@@ -1,0 +1,248 @@
+<style>	
+		body {			
+		}
+		
+		.zhigh{
+			z-index:2;	
+		}
+		
+		.zlow{
+			z-index:1;	
+		}
+		
+		.top{
+			position: fixed;
+			margin: 0px 10px 5px 10px;
+			top:0px;
+			font-size:30px;
+			text-transform:uppercase;
+			text-decoration:none;
+			font-weight:900;
+			background-color: #f9f9f9;
+			color:grey;			
+		}
+		
+		#navigation-bar {
+		
+			/***********  Fixed position at top, 100% */
+			position:fixed;
+			margin: 5px 5px 5px 5px;
+			top: 0;
+			left:0;
+			margin:0;
+			width:100%;
+			height:41px;
+			z-index:1;
+			
+			/*********** alignment of items within bar */
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			/*padding-left:130px;*/
+			overflow:hidden;
+			transition-duration: 1s;
+			transition-timing-function: linear;
+			
+			
+			/***********  styling */
+			background-color: #f9f9f9;	
+		}
+		
+		.nav-font-box {	
+			border-radius: 5px;
+			margin: 5px 10px 5px 10px;
+			padding: 5px 15px 5px 15px;
+			font-size:12;
+			color: grey;
+			letter-spacing: 1px;
+			text-decoration:none;
+			background-color:white;
+			/*float:left;*/
+		}
+			
+		.nav-link:hover {
+			background-color:#f9f9f9;
+			box-shadow: 0.5px 2px 2px 0.5px #e8e8e8;
+			color: black;
+		}
+						
+		.interesting {
+			border: 10px white solid;
+			text-align:center;
+			opacity:0.98;
+		}
+		
+		.imgCaption{		
+			text-align: center;
+			position: relative;
+			font-size:8.5pt;
+			color:#272626;
+			letter-spacing: -0.5px;
+			margin-top: -5px;
+			margin-bottom: -10px;			
+		}
+						
+		.Weirdo:hover{
+			color: #424242; 
+			margin-top:20px;
+		  -webkit-transition: all .3s ease-in;
+		  -moz-transition: all .3s ease-in;
+		  -ms-transition: all .3s ease-in;
+		  -o-transition: all .3s ease-in;
+		  transition: all .3s ease-in;
+		  opacity: 1;
+		  transform: scale(1);
+		  -ms-transform: scale(1); /* IE 9 */
+		  -webkit-transform: scale(1); /* Safari and Chrome */
+		}
+		
+		/*****Main Content Containters ****/
+		
+		#main-containter{
+			margin-left:auto;
+			margin-right:auto;
+			margin-bottom:10px;
+			padding:50px 50px 0px 50px;
+			top:0px;
+			width:1190px;
+			background-color:#FFFFFF;
+		}
+		
+		#main-Heading{
+			position: relative;
+			background-color:white;
+			padding: 20px 0 20 0px;
+		}
+		.About{
+			position: relative;
+			background-color:#e4e4e4;
+			padding: 0px 0px 50px 0px;
+		}
+
+		.ExpertAdvisors{
+			position: relative;
+			background-color:#;
+			padding: 10px 0px 50px 0px;
+		}
+		.Indicators{
+			position: relative;
+			background-color:#e4e4e4;
+			padding: 15px 0px 50px 0px;
+		}
+		.Methodology{
+			position: relative;
+			background-color:#FFFFFF;
+			padding: 10px 0px 50px 0px;
+		}
+		.Media{
+			position: relative;
+			background-color:#e4e4e4;
+			padding: 15px 0px 50px 0px;
+		}
+		
+		#footer {
+			position: relative;
+			background-color:#FFFFFF;
+			padding: 0px 0px 50px 0px;
+			text-align:center;
+		}
+
+		.pleasingToRyan{
+			text-align: justify;
+			text-justify: inter-word;
+		}
+		
+		ul.pleasingToRyan {
+			list-style-type: square;
+			font-size:13px;
+		}
+		
+		.surpriseMother{
+			visibility:hidden;
+		}
+		.boring{
+			visibility:visible;
+		}
+		
+		p {
+		padding:	15px 15px;
+		}
+		
+		.imgblock{
+			width:100%;
+			position:center;
+			display:block;
+			box-shadow: 0px 0px 5px 5px rgba(0,0,0, 0.1);
+			margin-top: -20px;
+		}
+		.imgblocksmall{
+			width:80%;
+			position:center;
+			box-shadow: 0px 0px 5px 5px rgba(0,0,0, 0.1);
+			margin-top: -20px;
+		}
+		
+		.block-height{
+			max-height: 450px; overflow: hidden; 
+		}
+		.block-height-small{
+			max-height: 200px; overflow: hidden; 
+		}
+						
+		hr {
+			border-top: 1px #c17f16 solid;
+		}
+		h1 {
+			display: relative;
+			color: #dcbc8b;
+			text-shadow: 0.5px 0.5px #ffebc4;
+			font-size:400%;
+			text-align: center;
+			font-weight: 400;
+		}
+		h3{
+			font-size:120%;
+			color: #4a4b4e;
+			text-align: center;
+			font-weight: 10;
+		}
+		h2{
+			font-size:200%;
+			color: #101011;
+			text-align: center;
+			font-weight: 10;
+		}
+		h4{
+			font-size:200%;
+			color: #dcbc8b;
+			text-align: center;
+			font-weight: 400;
+		}
+		h5{
+			font-size:120%;
+			color: #101011;
+			font-weight: 400;
+			padding-left:15px;
+		}
+		
+		.caption-container-subtext{
+		  text-align: center;
+		  background-color: rgba(0, 0, 0, 0.8);
+		  padding: 10px 2px 0px 0px;
+		  color: white;
+		  font-family:'Open Sans';
+		  font-size:10px;
+		}		
+		table, tr, td{
+			border:none;
+		}
+		
+		td {
+		text-align: center;
+		}
+		
+		.setSize{
+			height:170px
+		}
+
+	</style>

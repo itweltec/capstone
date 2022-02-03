@@ -1,0 +1,368 @@
+<!-- For firefox, in case any of the tutors use the best browser ever. I'm also too lazy to get this working on mobile: html skills are solely from neopets (Era 2000).-->
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Financial Automation Soltuions</title>
+		<link rel="stylesheet" type="text/css" href="CSS\Modal.css">
+		<link rel="stylesheet" type="text/css" href="CSS\Main.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,300' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+			body {
+			font-family:'Open Sans';
+			font-size:14px;
+			scroll-behavior: smooth;
+			}		
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="JQuery\DynamicAnimation.js"></script>
+	</head>
+	<body>
+		<div id="home"></div><a href="#home" class="top zhigh" id="TopLink">&#8962</a>
+		<div id="main-containter">
+		<noscript>JavaScript is off. Please enable to view full site.</noscript>
+			<div id="navigation-bar">				
+				<a href="#About" class="nav-font-box nav-link">About the Project</a> 
+				<a href="#ExpertAdvisors" class="nav-font-box nav-link">Expert Advisors</a> 
+				<a href="#Indicators" class="nav-font-box nav-link">Indicators</a>
+				<a href="#Methodology" class="nav-font-box nav-link">Methodology</a>
+			</div>
+			
+			<div id="main-Heading"><center><img src="Images\Logo.jpg"></center>
+				<h1> Financial Trading <BR>Automation Solutions</h1>
+				<h3>Creating Automated Trading Robots</h3>
+				<br>
+			</div>
+			
+			<div id="About" class="About">
+				<div class="block-height">
+					<img src="Images\FOREXBackground.png" class="imgblock" >
+				</div>
+				<br><h2>About the Project</h2>
+				<p class ="pleasingToRyan supriseMother">
+				Financial Trading Automation Solutions is the 2020 Capstone Project performed by Bailey Allen and Ryan Smith under the project team name ‘Smith and Allen: Financial Automation’.
+				The project client is Dave Hawthorne.
+				<br><br>
+				The client trades currencies on the Foreign Exchange Market (FOREX) through the trading platform MetaTrader 5.
+				He uses automated trading robots, known as Expert Advisors (EAs), to perform trades based on his trading strategies that he has developed though manual trading and observations.
+				Historically, the client has outsourced the creation of his EAs to overseas developers due to an unavailability of MQL5 
+				(the programming language required to automate financial trading on the MetaTrader 5 platform) developers in New Zealand. 
+				Outsourcing has resulted in problems. Different time zones and language barriers have resulted in the misunderstanding of 
+				requirements, increased development times, higher costs, and lower quality EAs providing Smith and Allen with an opportunity.
+				<br><br>
+				Financial Trading Automation Solutions serves two purposes. The first is automating two of the client’s financial trading strategies by creating two EAs to a professional standard.
+				The second and uniquely important purpose is offering a local development experience for the client to circumvent the problems encountered through outsourcing overseas.</p>
+			</div>
+			
+			
+			
+			
+			<div id="ExpertAdvisors" class="ExpertAdvisors">
+				<h4>Expert Advisors</h2>
+				<table>
+				<tr>
+					<td>
+						<p class ="pleasingToRyan supriseMother">					
+						<div class="block-height-small">
+						<img class="myImg imgblocksmall supriseMother interesting" src="Images\D1.png" alt="Fig 1.0 - Example of Daily Chart for the symbol EURUSD">
+						</div>
+						<br>
+						<div class="imgCaption">Fig 1.0 - Example of Daily Chart for the symbol EURUSD</div>
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+						  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+						  <img class="modal-content" id="img01">
+						  <div id="caption"></div>
+						</div>						
+						</p>
+					</td>
+					<td>
+						<p class ="pleasingToRyan supriseMother">					
+						<div class="block-height-small">
+						<img class="myImg imgblocksmall supriseMother interesting" src="Images\H1.png" alt="Fig 2.0 - Example of Hourly Chart for the symbol EURUSD">
+						</div>
+						<br>
+						<div class="imgCaption">Fig 2.0 - Example of Hourly Chart for the symbol EURUSD</div>
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+						  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+						  <img class="modal-content" id="img01">
+							<div id="caption"></div>
+						</div>						
+						</p>
+					</td>
+				</tr>
+				</table>
+				<p class ="pleasingToRyan supriseMother">
+					An Expert Advisor (EA) is an automated trading robot that performs trades. 
+					Our project team developed two EAs that perform trades in strict conditions based on the project client’s strategies.
+					<br><br>
+					An EA works by attaching it to a MetaTrader 5 Chart. A Chart shows the price of a Symbol (e.g. EURUSD) for a 
+					specific Timeframe (e.g. 1 hour). Trades are performed on the chart the EA is attached too.
+				</p>
+				<table>
+				<tr>
+					<td>
+						<p class ="pleasingToRyan supriseMother">					
+						<div class="block-height-small">
+						<img class="myImg imgblocksmall supriseMother interesting" src="Images\Long.png" alt="Fig 3.0 - Clear example of a long trending symbol">
+						</div>
+						<br>
+						<div class="imgCaption">Fig 3.0 - Clear example of a long trending symbol</div>
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+						  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+						  <img class="modal-content" id="img01">
+						  <div id="caption"></div>
+						</div>						
+						</p>
+					</td>
+					<td>
+						<p class ="pleasingToRyan supriseMother">					
+						<div class="block-height-small">
+						<img class="myImg imgblocksmall supriseMother interesting" src="Images\Short.png" alt="Fig 4.0 - Clear example of a short trending symbol">
+						</div>
+						<br>
+						<div class="imgCaption">Fig 4.0 - Clear example of a short trending symbol</div>
+						<!-- The Modal -->
+						<div id="myModal" class="modal">
+						  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+						  <img class="modal-content" id="img01">
+							<div id="caption"></div>
+						</div>						
+						</p>
+					</td>
+				</tr>
+				</table>
+				<p class ="pleasingToRyan supriseMother">					
+					<div class="block-height">
+					<img class="myImg imgblock supriseMother interesting" src="Images\LRCSBW.png" alt="Fig 5.0 - Linear Contrarian System Sell Trade Example">
+					</div>
+					<br>
+					<div class="imgCaption">Fig 5.0 - Linear Regression Contrarian System showcasing a big winning trade (red arrow at the top indicates a Sell trade)</div>
+					<div id="myModal" class="modal">
+					<span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+					</div>						
+				</p>
+				<p class ="pleasingToRyan supriseMother">
+						A trade is the opening of either a BUY position or a SELL position. 
+						A BUY trade is also referred to as a LONG or a BULLISH trade.
+						A SELL trade is also referred to as a SHORT or BEARISH trade. These terms are used interchangeably.
+						<br><br>
+						When an open position is closed, the opposite position of that trade is placed. 
+						For example, a trade is performed by opening a BUY position. That BUY position is then sold 
+						(i.e. a SELL trade is placed) to close that open position and complete that trade.
+						<br><br>
+						In MetaTrader 5, a BUY trade is represented as an upwards blue arrow and a SELL trade is represented as a downwards red arrow.
+				</p>
+				<h5>Linear Regression Trend System</h5>
+				<table>
+				<tr>
+					<td>
+						<div class="block-height-small">
+							<img class="myImg imgblocksmall supriseMother interesting" src="Images\LRTSInput.png" alt="Fig 6.0 - Linear Regression Trend System input parameters" >
+							</div>
+							<br>
+							<div class="imgCaption">Fig 6.0 - Linear Regression Trend System input parameters</div>
+							<div id="myModal" class="modal">
+							  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+							  <img class="modal-content" id="img01">
+							  <div id="caption"></div>
+						</div>	
+					</ul>	
+					</div>
+					</td>
+					<td>
+					<ul class="pleasingToRyan supriseMother">
+						<li>This EA’s strategy represents the idea that when a symbol is trending in a certain direction, it will continue to move in that direction.</li>
+						<br>
+						<li>The main trend is determined by the Chandelier Exit indicator on the chart’s higher timeframe.</li>
+						<br>
+						<li>When the lower timeframe is showing sideways price movement, determined by a linear regression line, the EA will place a trade expecting price to continue to move in the direction of the main trend.</li>
+						<br>
+						<li>The EAs allow the client to optimise his strategies by providing a series of input parameters. The input parameters themseleves are customisable, depending upon the strategy.</li>
+					</ul>															
+					</td>
+				</tr>
+			</table>
+			<p></p>	
+				<h5>Linear Regression Contrarian System</h5>
+			<table>
+			<tr>
+				<td>
+				<ul class="pleasingToRyan supriseMother">
+					<li>Like the previous EA, this strategy places trades in the direction of the main trend.</li>
+					<br>
+					<li>When the lower timeframe is showing the price move in a sharp, steep, and opposite direction
+					to the main trend, the EA will place a trade expecting price to sharply jump back towards the main trend.</li><br>
+					<li>The EAs allow the client to optimise his strategies by providing a series of input parameters. The input parameters themseleves which are customisable depending upon the strategy.</li>
+				</ul>
+				<br>
+				</div>
+				</td>
+				<td>
+						<div class="block-height-small">
+						<img class="myImg imgblocksmall supriseMother interesting" src="Images\LRCSInput.png" alt="Fig 7.0 - Linear Regression Contrarian System input parameters" >
+						</div>
+						<br>
+						<div class="imgCaption">Fig 7.0 - Linear Regression Contrarian System input parameters</div>
+						<div id="myModal" class="modal">
+						  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+						  <img class="modal-content" id="img01">
+						  <div id="caption"></div>
+						</div>					
+				
+				</td>
+			</tr>
+			</table>
+			</div>
+			<div id="Indicators" class="Indicators">
+				<h2>Indicators</h2>
+				<p class="pleasingToRyan supriseMother">
+				Indicators are separate to the Expert Advisors. The EAs of this project use two indicators to inform correct trading conditions.
+				</p>			
+				<h5>Chandelier Exit Indicator</h5>
+				<div class="block-height">
+				<img class="myImg imgblock" src="Images\CE.png" alt="Fig 8.0 - Chandelier Exit Indicator">
+				</div>
+				<br>
+				<div class="imgCaption">Fig 8.0 - Linear Regression Contrarian System showcasing the Chandelier Exit indicator</div>
+				
+				<div id="myModal" class="modal">
+				  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+				  <img class="modal-content" id="img01">
+				  <div id="caption"></div>
+				</div>
+				
+				<p class="pleasingToRyan supriseMother">
+				The Chandelier Exit indicator is used on the higher timeframe of the chart the EA is attached too. 
+				It is required by the client’s strategies to determine the main trend of the chart’s symbol.
+				For example, it determines whether the EURUSD is trending long, or trending short. 
+				Trending long is referring to an upwards direction, while trending short is referring to a downwards direction.
+				<br><br>
+				When the symbol is trending long, the Chandelier Exit indicator appears as a <i>dashed blue line</i> below the current price.
+				When the symbol is trending short, the indicator appears as a <i>dashed pink line</i> above the current price.	
+				<h5>Linear Regression Indicator</h5>
+				<div class="block-height">
+				<img class="imgblock" src="Images\LRCloseUp.png" alt="Linear Regression Indicator">
+				</div>
+				<p class="pleasingToRyan supriseMother">
+					The Linear Regression indicator is used on the current (lower) timeframe of the chart the EA is attached too.
+					It is required by the client’s strategies to measure the direction and volatility of price movement.
+					The Linear Regression indicator draws a <i>yellow line</i> on the chart. The length of the line is set by the user when attaching the EA to a chart.
+				</p>
+				<table>
+				<tr>
+					<td>
+					<p class="pleasingToRyan supriseMother">
+						For example, trades in the Linear Regression Trend System can be placed when the linear regression line slope is below a certain
+						steepness in either direction indicating sideways price movement.</p>
+					</td>
+					<td>
+						<div class="block-height-small">
+						<img class="myImg imgblocksmall supriseMother interesting" src="Images\LRIndicator.png" alt="Fig 9.0 - Linear Regression Indicator" >
+						</div>
+						<br>
+						<div class="imgCaption">Fig 9.0 - Linear Regression Trend System showcasing the Linear Regression Indicator</div>
+						<div id="myModal" class="modal">
+						  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+						  <img class="modal-content" id="img01">
+						  <div id="caption"></div>
+						</div>					
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<br><br>
+						<div class="block-height-small"> 
+						<img class="myImg imgblocksmall supriseMother interesting" src="Images\LRC.png" alt="Fig 10.0 - Linear Regression Indicator">
+						</div>
+						<br>
+						<div class="imgCaption">Fig 10.0 - Linear Regression Contrarian System showcasing the Linear Regression Indicator</div>
+						<div id="myModal" class="modal">
+						  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+						  <img class="modal-content" id="img01">
+						  <div id="caption"></div>
+						</div>			
+					</td>
+					<td>
+						<p class="pleasingToRyan supriseMother">
+						Trades in the Linear Regression Contrarian System can be placed 
+						when the linear regression trend line slope is greater than a certain steepness in the opposite direction of the main trend.</p>								
+					</td>
+				</tr>
+				</table>			
+			</div>
+				
+			<div id="Methodology" class="Methodology">
+			<h4>Methodology</h4>		
+			<table>
+			<tr>
+				<td>
+					<center><img src="Images\AdaptedRad.png" class="interesting"></center><div class="imgCaption">Adapted Rapid Application Methodology</div>
+				</td>
+				<td>
+					<p class="pleasingToRyan supriseMother">Key Dates in the prototype and final Deliverables:</p>
+					<ul class="pleasingToRyan supriseMother">
+						<li> First Prototype delivered: 10/04/2020</li>
+						<br>
+						<li> Second Protytpe delivered: 13/05/2020</li>
+						<br>
+						<li> Final Handover: 27/05/2020</li>
+					</ul>
+				</td>
+			</tr>
+			</table>
+				
+			<p class="pleasingToRyan supriseMother">The methodology chosen to implement the project was an adapted Rapid Application Development (RAD).
+			This methodology used prototypes which were delivered at two points in the project. This was to ensure that the requirements were being met,
+			and change could be implemented by allowing the client to see the system trading in a live strategy testing environment. The nature of the Expert Advisor is often subject to change as the strategy evolves.
+			<br><br>
+			The main adaptation for RAD was the incorporation of the design elements to use for the development. The design work saw the architecture handled for the core skeleton of the systems. 
+			Diagramming used Sequence Diagramming, Class Diagramming and Activity Diagramming, as these were of best fit to the systems. 
+			The main considerations placed in incorporation of design to RAD were to achieve decreased development time and to keep the design abstract enough to incorporate more features in future.
+			</p>
+			
+			
+			<!-- <video controls width="100%" >  <source src="Video\Linear Regression Contrarian System.mp4" type="video/mp4" ></video> -->
+			<!-- </p> -->
+			
+			</div>
+		
+		<div id="footer"> <hr>Created By Smith and Allen, Ryan Smith and Bailey Allen<br>
+		<p class ="imgCaption">About section image sourced from Pixabay free for commercial use.
+		https://pixabay.com/photos/stock-trading-monitor-business-1863880/</p></div>
+		
+		</div>	
+<script>
+	var modal = document.getElementById('myModal');
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = $('.myImg');
+	var modalImg = $("#img01");
+	var captionText = document.getElementById("caption");
+	$('.myImg').click(function(){
+		modal.style.display = "block";
+		var newSrc = this.src;
+		modalImg.attr('src', newSrc);
+		captionText.innerHTML = this.alt;
+	});
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+</script>
+		
+	</body>
+	
+</html>
+
+
+		
