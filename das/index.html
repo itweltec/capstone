@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Digital Attendance System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target navbar-padding" role="banner">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-6">
+          </div>
+          <div class="col-6 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#about-section" class="nav-link">About</a></li>
+                <li><a href="#solution-section" class="nav-link">Solution</a></li>
+                <li><a href="#product-section" class="nav-link">Product</a></li>
+                <li><a href="#team-section" class="nav-link">The Team</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-2"><a href="#" class="site-menu-toggle js-menu-toggle light-text float-right"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+      </div>
+      
+    </header>
+    <!-- Image from: https://www.whitireiaweltec.ac.nz/our-campuses/petone-campus/ -->
+    <div class="site-blocks-cover overlay" style="background-image: url(images/weltec-campus.jpg);" data-aos="fade" id="home-section">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-8 mt-lg-7 text-center">
+            <h1 class="text-primary-color">Digital Attendance System</h1>
+            <p class="mb-5">Converging Technology and Business Processes</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about-section" class="smoothscroll arrow-down"><span class="icon-arrow_downward"></span></a>
+    </div>  
+
+    <div class="bg-light site-section" id="about-section">
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-md-7 text-center">
+                  <h2 class="section-title mb-3">About The Project</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 text-justify">
+                  <div class="dark-text">
+                    <p>The Digital Attendance System (DAS) is a final year Project undertaken by four students at the Wellington Institute of Technology. The Digital Attendance System was a project that converged existing technology and business processes to form a digital solution that improves and refines the business process.</p>
+                    <p>The root issue addressed by the Project tackled the inconsistent approaches of collecting student attendance at class sessions, which is an important metric for International Students’ Visas. These inconsistent approaches were also error-prone and often time-consuming for Staff Members to both collect and input into the Institute's central attendance system.</p>
+                    <p>Since the System would be used by a range of Staff Members, the Staff interfaces would need to be simple and easy to use while still maintaining all the required functionality.</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="site-section" id="solution-section">
+        <div class="container">
+            <div class="row mb-5 justify-content-center">
+                <div class="col-md-7 text-center">
+                  <h2 class="section-title mb-1">The Solution</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 text-justify">
+                  <div class="light-text">
+                    <p>
+                      In designing the Digital Attendance System, the team decided to break down the overall System into four Sub-Systems, which would provide the System with a degree of modularity and a separation of concerns. The four Sub-Systems that compose the Digital Attendance System are: a Headless REST API Server, an Android Mobile Application, a Staff Web App, and a Student Web Portal. These four Sub-Systems interact with each other to bring full functionality to the overall System. The User Interfaces were designed to be intuitive and simplistic to use for the users.<br/>
+                      The structure of the four Sub-Systems are:
+                      <ul>
+                        <li>Headless REST API Server: This was built with C# / .NET Core and runs on a Linux machine. The Headless API Server is the backbone of the System and maintains the data of the system. The Server’s API Endpoints were protected with JSON Web Tokens.</li>
+                        <li>Android Mobile Application: The Android Mobile Application was built using Java and utilises Near Field Communication (NFC) technologies to enable students to record their attendance at class sessions by scanning their Student ID card against a compatible Android device. The Android Application was developed to be offline-first compatible, enabling the Application to record attendance without requiring an active internet connection.</li>
+                        <li>Staff Web App: The Staff Web App was built with the Angular framework and allows Staff Members to manage their class sessions, devices connected to the system, and export the attendance data in the CSV format required by the central attendance system that is copied to their clipboard. Google Authentication was integrated into the System to enable Staff Members to use their existing logins.</li>
+                        <li>Student Web Portal: The Student Web Portal was also built upon the Angular framework and allows students to record their attendance at class sessions by entering an unique 4-character code that is generated in the Staff Web App and their Student ID number; this then records their attendance at that class session.</li>
+                      </ul>
+                      <br/>
+                      <div class="d-flex justify-content-center pb-5">
+                        <img src="./images/system-architecture.gif" class="img-fluid img-sys-architecture" alt="System Architecture of the Digital Attendance System" />
+                      </div>
+                      The Mobile Application allows the Students' attendance to be recorded by scanning their Student ID Cards, while the Student Portal allows attendance to be collected by Students entering their ID Number. The attendance data is then exported from the System using the Staff Web Application<br/>
+                      Together these four Sub-Systems enable ease and simplicity of recording attendance. The System then enables staff to easily export the data into the central attendance system.
+                    </p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-light site-section" id="product-section">
+      <div class="container">
+          <div class="row mb-5 justify-content-center">
+              <div class="col-md-7 text-center">
+                <h2 class="section-title mb-1">The Product</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-justify">
+                <div class="light-text">
+                  <div class="img-gallery">
+                    <a href="./images/das_product_web_login.PNG" data-fancybox="gallery" data-caption="Staff Web App - Google Authentication Login"><img src="./images/das_product_web_login.PNG"></a>
+                    <a href="./images/das_product_web_session_copy.PNG" data-fancybox="gallery" data-caption="Staff Web App - Copy Attendance to Clipboard"><img src="./images/das_product_web_session_copy.PNG"></a>
+                    <a href="./images/das_product_web_session_done.PNG" data-fancybox="gallery" data-caption="Staff Web App - Mark a Session as uploaded"><img src="./images/das_product_web_session_done.PNG"></a>
+                    <a href="./images/das_product_web_done2.PNG" data-fancybox="gallery" data-caption="Staff Web App - Attendance copied from Clipboard"><img src="./images/das_product_web_done2.PNG"></a>
+                    <a href="./images/das_product_web_sessions.PNG" data-fancybox="gallery" data-caption="Staff Web App - Class Session"><img src="./images/das_product_web_sessions.PNG"></a>
+                    <a href="./images/das_product_web_studentPortal.PNG" data-fancybox="gallery" data-caption="Student Web Portal - enter ID Number and Unique Class Code"><img src="./images/das_product_web_studentPortal.PNG"></a>
+                    <a href="./images/das_product_web_devices.PNG" data-fancybox="gallery" data-caption="Staff Web App - Device Management"><img src="./images/das_product_web_devices.PNG"></a>
+                    <a href="./images/das_product_web_admin.PNG" data-fancybox="gallery" data-caption="Staff Web App - Authorised Staff Members"><img src="./images/das_product_web_admin.PNG"></a>
+                    <a href="./images/das_product_mobile_scan.jpg" data-fancybox="gallery" data-caption="Mobile App - Ready to Scan ID Card"><img src="./images/das_product_mobile_scan.jpg"></a>
+                    <a href="./images/das_product_mobile_main.jpg" data-fancybox="gallery" data-caption="Mobile App - Staff Member Screen"><img src="./images/das_product_mobile_main.jpg"></a>
+                    <a href="./images/das_product_mobile_session_select.jpg" data-fancybox="gallery" data-caption="Mobile App - Select Class Session to start"><img src="./images/das_product_mobile_session_select.jpg"></a>
+                    <a href="./images/das_project_mobile_scan.png" data-fancybox="gallery" data-caption="Mobile App - Scanning Student IDs (Successfull)"><img src="./images/das_project_mobile_scan.png"></a>
+                    <a href="./images/das_project_mobile_scan_warn.png" data-fancybox="gallery" data-caption="Mobile App - Scanning Student IDs (Error)"><img src="./images/das_project_mobile_scan_warn.png"></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <section class="site-section" id="team-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-12 text-center">
+            <h2 class="section-title mb-3">The Team</h2>
+          </div>
+        </div>
+        <div class="row justify-content-around dark-text">
+          <!-- PERSON TEMPLATE START -->
+          <div class="col-12 col-lg-6 mb-6">
+            <div class="row team-member m-2">
+              <div class="col-sm-12 col-md-5 col-lg-5 d-flex flex-column">
+                <figure class="d-flex align-self-center align-self-md-start align-self-lg-start">
+                  <img src="images/daniel-hawkes.jpeg" alt="Daniel Hawkes" class="img-fluid team-img">
+                </figure>
+                <div class="d-flex justify-content-center">
+                  <a href="https://www.linkedin.com/in/daniel-hawkes-0b04061b8" title="Daniel Hawkes | LinkedIn">
+                      <span class="custom-icon icon-linkedin"></span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-7 col-lg-7">
+                <h3 class="mb-2">Daniel Hawkes</h3>
+                <span class="position">Lead Back-end Developer</span>
+                <p>
+                  I am a soon to be graduate majoring in Software Development. I am passionate about systems design and enjoy creating backend servers and applications across all platforms. I am proficient in C#/ASP.NET, Javascript, React, and Python development, with experience in Android and server administration.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- PERSON TEMPLATE END -->
+          <!-- PERSON TEMPLATE START -->
+          <div class="col-12 col-lg-6 mb-6">
+            <div class="row team-member m-2">
+              <div class="col-sm-12 col-md-5 col-lg-5 d-flex flex-column">
+                <figure class="d-flex align-self-center align-self-md-start align-self-lg-start">
+                  <img src="images/alen-jose.jpg" alt="Alen Jose" class="img-fluid team-img">
+                </figure>
+                <div class="d-flex justify-content-center">
+                  <a href="https://www.linkedin.com/in/alen-jose-37081318b/" title="Alen Jose | LinkedIn">
+                      <span class="custom-icon icon-linkedin"></span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-7 col-lg-7">
+                <h3 class="mb-2">Alen Jose</h3>
+                <span class="position">Co-Project Manager, Lead Tester & Security Advisor</span>
+                <p>
+                  I am in my final year of my BIT. I have engaged in a variety of courses, but more emphasis was given to security papers which I completed. Hence, my skills are more in the security part of a system. I also enjoyed taking on the task of a project manager.
+                </p><br/>
+              </div>
+            </div>
+          </div>
+          <!-- PERSON TEMPLATE END -->
+          <!-- PERSON TEMPLATE START -->
+          <div class="col-12 col-lg-6 mb-6">
+            <div class="row team-member m-2">
+              <div class="col-sm-12 col-md-5 col-lg-5 d-flex flex-column">
+                <figure class="d-flex align-self-center align-self-md-start align-self-lg-start">
+                  <img src="images/michael-du-toit.jpg" alt="Michael du Toit" class="img-fluid team-img">
+                </figure>
+                <div class="d-flex justify-content-center">
+                  <a href="https://www.linkedin.com/in/michael-du-toit/" title="Michael du Toit | LinkedIn">
+                      <span class="custom-icon icon-linkedin"></span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-7 col-lg-7">
+                <h3 class="mb-2">Michael du Toit</h3>
+                <span class="position">Full Stack Developer &amp; Co-Project Manager</span>
+                <p>
+                  I am in the final year of my BIT and will major in Software Development when I graduate in mid-2022. The IT industry is continuously evolving, and I enjoy learning the new skills and knowledge that comes with it. I enjoy working across all the technology stacks, being proficient specifically in JavaScript, Angular, C#, Android and general Web development.<br/>
+                </p><br/>
+              </div>
+            </div>
+          </div>
+          <!-- PERSON TEMPLATE END -->
+          <!-- PERSON TEMPLATE START -->
+          <div class="col-12 col-lg-6 mb-6">
+            <div class="row team-member m-2">
+              <div class="col-sm-12 col-md-5 col-lg-5 d-flex flex-column">
+                <figure class="d-flex align-self-center align-self-md-start align-self-lg-start">
+                  <img src="images/nick-sutton-dicken.jpg" alt="Nick Sutton-Dicken" class="img-fluid team-img">
+                </figure>
+                <div class="d-flex justify-content-center">
+                  <a href="https://www.linkedin.com/in/nick-sutton-dicken/" title="Nick Sutton-Dicken | LinkedIn">
+                      <span class="custom-icon icon-linkedin"></span>
+                  </a>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-7 col-lg-7">
+                <h3 class="mb-2">Nick Sutton-Dicken</h3>
+                <span class="position">Lead Mobile Developer</span>
+                <p>
+                  I am soon graduating with a Bachelor of Information Technology in Software Development. Currently I am seeking any roles as a Software Developer in the IT industry so I can gain further knowledge and experience. I enjoy working on back-end and have dabbled in some game modifications. As such I am proficient in C#, Java, SQL, and Android Development, but am eager to expand my skills in the future.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- PERSON TEMPLATE END -->
+        </div>
+      </div>
+      <div class="container pt-5">
+        <div class="row text-center">
+          <div class="col-12">
+            <p>Team Advisor: Richa Panjabi</p>
+            <p>Project Client: Wellington Institute of Technology represented by Robert Sutcliffe</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row d-flex justify-content-center flex-wrap">
+          <p class="light-text text-center px-4">The Digital Attendance System was designed and built by the four person DAMN Team for their final year project in the Bachelor of Information Technology in 2021.</p>
+          <a href="https://www.whitireiaweltec.ac.nz/" title="Whitireia & WelTec">
+            <!--<img class="footer-logo" src="images/weltec-logo.jpeg" alt="Wellington Institute of Technology">-->
+            <img class="footer-logo" src="images/Whitireia-and-WelTec-Logo.svg" alt="Whitireia & WelTec">
+          </a>
+        </div>
+        <div class="row pt-1 mt-1 text-center">
+          <div class="col-md-12">
+            <div class="border-top">
+              <p>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- .site-wrap -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/main.js"></script>
+   
+  </body>
+</html>
